@@ -4,8 +4,7 @@ import Project from "@/components/Project"
 import SocialMediaButton from "@/components/SocialMediaButton";
 import { useState, useEffect, useRef } from 'react';
 import {ReactSocialMediaIcons} from 'react-social-media-icons';
-
-
+import { motion } from "motion/react"
 
 export default function Home() {
   return (
@@ -14,15 +13,26 @@ export default function Home() {
       <GradientDescent />
       
         <div className="flex flex-col items-center text-center my-30 relative z-10">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">Leonardo Vo</h1>
-              <p className="text-xl md:text-2xl mb-8">Computer Science Student</p>
+              <motion.div
+              initial={{ opacity: 0, y: 0}}
+              animate={{ opacity: 1, y: 0 }} 
+              transition={{ duration: 3, ease: "easeOut" }}
+              className="flex flex-col items-center text-center relative z-10"
+              >
+                <h1 className="text-5xl md:text-6xl font-bold mb-6">Leonardo Vo</h1>
+                <p className="text-xl md:text-2xl mb-8">Computer Science Student</p>
+                <div className = "flex gap-4">
+                  <ReactSocialMediaIcons borderColor="rgba(0,0,0,0.25)" icon="github" iconColor="rgba(255,255,255,1)" backgroundColor="rgba(12, 18, 68, 0.8)" url="https://github.com/leonardojava" size="58" />
+                  <ReactSocialMediaIcons borderColor="rgba(0,0,0,0.25)" icon="linkedin" iconColor="rgba(255,255,255,1)" backgroundColor="rgba(12, 18, 68, 0.8)" url="https://www.linkedin.com/in/leonardo-vo-761845294/" size="58" />
+                  <ReactSocialMediaIcons borderColor="rgba(0,0,0,0.25)" icon="mail" iconColor="rgba(255,255,255,1)" backgroundColor="rgba(12, 18, 68, 0.8)" url="mailto:leonardo11907vo@gmail.com/" size="58" />
+                </div>
+              </motion.div>
               
-              <div className = "flex gap-4">
-              <ReactSocialMediaIcons borderColor="rgba(0,0,0,0.25)" icon="github" iconColor="rgba(255,255,255,1)" backgroundColor="rgba(12, 18, 68, 0.8)" url="https://github.com/leonardojava" size="58" />
-              <ReactSocialMediaIcons borderColor="rgba(0,0,0,0.25)" icon="linkedin" iconColor="rgba(255,255,255,1)" backgroundColor="rgba(12, 18, 68, 0.8)" url="https://www.linkedin.com/in/leonardo-vo-761845294/" size="58" />
-              <ReactSocialMediaIcons borderColor="rgba(0,0,0,0.25)" icon="mail" iconColor="rgba(255,255,255,1)" backgroundColor="rgba(12, 18, 68, 0.8)" url="mailto:leonardo11907vo@gmail.com/" size="58" />
-              </div>
-              <div className="my-40 max-w-3xl mx-auto">
+              <motion.div 
+              className="my-40 max-w-3xl mx-auto"
+              initial={{ opacity: 0, y: 100 }}
+              animate={{ opacity: 1, y: 0 }} 
+              transition={{ duration: 2, ease: "easeOut" }}>
                 <h2 className="text-3xl font-bold mb-6 text-left">About Me</h2>
                 <div className="bg-gray-900 bg-opacity-50 p-6 rounded-lg">
                   <p className="mb-4 text-left">
@@ -30,9 +40,13 @@ export default function Home() {
                     being that cool combo of the two I've been spending a lot of time studying it.
                   </p>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="my-20">
+              <motion.div 
+              className="my-20"
+              initial={{ opacity: 0, y: 100 }}
+              animate={{ opacity: 1, y: 0 }} 
+              transition={{ duration: 2, ease: "easeOut" }}>
                   <h2 className="text-3xl font-bold mb-6 text-left">Projects</h2>
                   <div className="grid grid-cols-1 gap-6">
                       <Project
@@ -53,7 +67,7 @@ export default function Home() {
                       />
                       
                   </div>
-              </div>
+              </motion.div>
         </div>
 
       

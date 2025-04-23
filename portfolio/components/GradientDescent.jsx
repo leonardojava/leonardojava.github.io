@@ -10,6 +10,11 @@ export default function GradientDescent(){
         width: window.innerWidth,
         height: window.innerHeight
       });
+      if (canvasRef.current) {
+        const canvas = canvasRef.current;
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
     };
     
     window.addEventListener('resize', updateDimensions);
@@ -31,7 +36,7 @@ export default function GradientDescent(){
     // Function parameters
     const numStartPoints = 2;
     let points = [];
-    let learningRate = 0.00001;
+    let learningRate = 0.001;
     
     
     const f = (x) => Math.pow(x, 3) + 2 * Math.pow(x, 2) + 4;
