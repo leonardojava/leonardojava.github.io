@@ -2,10 +2,12 @@ import { useState, useEffect, useRef } from 'react';
 
 export default function GradientDescent(){
     const canvasRef = useRef(null);
-  const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+    const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+    const[isPlaying, setPlay] = useState(false)
   
   useEffect(() => {
     const updateDimensions = () => {
+      if(isPlaying) return;
       setDimensions({
         width: window.innerWidth,
         height: window.innerHeight
@@ -18,8 +20,9 @@ export default function GradientDescent(){
     };
     
     window.addEventListener('resize', updateDimensions);
+    setPlay(false)
     updateDimensions();
-    
+    setPlay(true)
     return () => window.removeEventListener('resize', updateDimensions);
   }, []);
   
