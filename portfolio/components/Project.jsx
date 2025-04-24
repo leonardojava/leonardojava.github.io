@@ -1,6 +1,6 @@
 export default function Project({ title, description, link}) {
     return (
-      <div className="bg-gray-900 bg-opacity-50 p-6 rounded-lg hover:bg-opacity-60 transition-all max-w-3xl text-left">
+      <div className=" border-2 border-[#00000040] bg-gray-900 bg-opacity-50 p-6 rounded-lg hover:bg-opacity-60 transition-all max-w-3xl text-left">
         <div className="flex items-center mb-3">
           <h3 className="text-xl font-bold">{title}</h3>
         </div>

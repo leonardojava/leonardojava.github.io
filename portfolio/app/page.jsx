@@ -8,7 +8,7 @@ import { motion } from "motion/react"
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen font-sans text-white">
+    <div className="relative min-h-screen font-sans text-white text-shadow-lg/30">
       
       <GradientDescent />
       
@@ -21,11 +21,52 @@ export default function Home() {
               >
                 <h1 className="text-5xl md:text-6xl font-bold mb-6">Leonardo Vo</h1>
                 <p className="text-xl md:text-2xl mb-8">Computer Science Student</p>
-                <div className = "flex gap-4">
-                  <ReactSocialMediaIcons borderColor="rgba(0,0,0,0.25)" icon="github" iconColor="rgba(255,255,255,1)" backgroundColor="rgba(12, 18, 68, 0.8)" url="https://github.com/leonardojava" size="58" />
-                  <ReactSocialMediaIcons borderColor="rgba(0,0,0,0.25)" icon="linkedin" iconColor="rgba(255,255,255,1)" backgroundColor="rgba(12, 18, 68, 0.8)" url="https://www.linkedin.com/in/leonardo-vo-761845294/" size="58" />
-                  <ReactSocialMediaIcons borderColor="rgba(0,0,0,0.25)" icon="mail" iconColor="rgba(255,255,255,1)" backgroundColor="rgba(12, 18, 68, 0.8)" url="mailto:leonardo11907vo@gmail.com/" size="58" />
+
+                <div
+                className="border-2 border-[#00000040] bg-[#0c1244cc] my-5 text-white px-6 py-3 rounded-lg shadow-lg hover:shadow-[0_0_15px_rgba(65,184,255,0.8)] transition-shadow"
+                >
+                <a
+                  href="ldvoresume.pdf"
+                  target="_blank"
+                  className="text-lg font-semibold"
+                >
+                  Resume
+                </a>
                 </div>
+
+                <div className="flex gap-4">
+                  <div className="hover:shadow-[0_0_15px_rgba(65,184,255,0.8)] transition-shadow">
+                    <ReactSocialMediaIcons
+                      borderColor="rgba(0,0,0,0.25)"
+                      icon="github"
+                      iconColor="rgba(255,255,255,1)"
+                      backgroundColor="rgba(12, 18, 68, 0.8)"
+                      url="https://github.com/leonardojava"
+                      size="58"
+                    />
+                  </div>
+                  <div className="hover:shadow-[0_0_15px_rgba(65,184,255,0.8)] transition-shadow">
+                    <ReactSocialMediaIcons
+                      borderColor="rgba(0,0,0,0.25)"
+                      icon="linkedin"
+                      iconColor="rgba(255,255,255,1)"
+                      backgroundColor="rgba(12, 18, 68, 0.8)"
+                      url="https://www.linkedin.com/in/leonardo-vo-761845294/"
+                      size="58"
+                    />
+                  </div>
+                  <div className="hover:shadow-[0_0_15px_rgba(65,184,255,0.8)] transition-shadow">
+                    <ReactSocialMediaIcons
+                      borderColor="rgba(0,0,0,0.25)"
+                      icon="mail"
+                      iconColor="rgba(255,255,255,1)"
+                      backgroundColor="rgba(12, 18, 68, 0.8)"
+                      url="mailto:leonardo11907vo@gmail.com/"
+                      size="58"
+                    />
+                  </div>
+                </div>
+
               </motion.div>
               
               <motion.div 
@@ -34,7 +75,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }} 
               transition={{ duration: 2, ease: "easeOut" }}>
                 <h2 className="text-3xl font-bold mb-6 text-left">About Me</h2>
-                <div className="bg-gray-900 bg-opacity-50 p-6 rounded-lg">
+                <div className="bg-gray-900 bg-opacity-50 p-6 rounded-lg border-3 border-[#00000040]">
                   <p className="mb-4 text-left">
                     I'm a Computer Science student who just recently commited to UC Santa Cruz. If it isn't clear, I find computer science and math very interesting. With Machine learning
                     being that cool combo of the two I've been spending a lot of time studying it.
