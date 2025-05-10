@@ -41,7 +41,8 @@ export default function Home() {
                       icon="github"
                       iconColor="rgba(255,255,255,1)"
                       backgroundColor="rgba(12, 18, 68, 0.8)"
-                      url="https://www.kaggle.com/code/leonardovo/digits"
+                      url="https://github.com/leonardojava"
+                      
                       size="58"
                     />
                   </div>
@@ -93,7 +94,7 @@ export default function Home() {
                       <Project
                         title="Hand Written Digit Classifier" 
                         description="A neural network I built using Python and NumPy. It classifies hand drawn images of digits from MSINT data set."
-                        link="https://github.com/leonardojava/digpy"
+                        link="https://www.kaggle.com/code/leonardovo/digits"
                       />
                       <Project
                         title="Rate my Cascade" 
