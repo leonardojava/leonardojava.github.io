@@ -41,7 +41,7 @@ export default function Home() {
                       icon="github"
                       iconColor="rgba(255,255,255,1)"
                       backgroundColor="rgba(12, 18, 68, 0.8)"
-                      url="https://github.com/leonardojava"
+                      url="https://www.kaggle.com/code/leonardovo/digits"
                       size="58"
                     />
                   </div>
