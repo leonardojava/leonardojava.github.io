@@ -1,0 +1,97 @@
+body {
+    background-color: #333333;
+    margin-top: 3%;
+}
+div {
+    background-color: #282828;
+    border-color: #606060;
+    border-style: solid;
+    border-width: 2px;
+    max-width: 75%;
+    min-width: 75%; 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-family:'Courier New', Courier, monospace;
+    padding: 10px;
+}
+input{
+    background-color: #282828;
+    border-color: #606060;
+    border-style: dashed;
+    border-width: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-family:'Courier New', Courier, monospace;
+    color: #C586C0;
+    padding: 10px;
+}
+.divHead{
+    border-radius: 5px 5px 0 0;
+    font-size: large;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: -2px;
+}
+.roundBot{
+    border-radius: 0 0 5px 5px;
+}
+.classBlue {
+    color: #569CD6;
+    
+}
+.typeTeal{
+    color: #4EC9B0;
+    
+}
+.varLB{
+    color: #9CDCFE;
+    
+}
+.strOrg{
+    color: #CE9178;
+    
+}
+.newPurple{
+    color: #C586C0;
+    
+}
+.commentGreen{
+    color: #6A9955;
+    
+}
+.brackWhite{
+    color: #D4D4D4;
+}
+a{
+    color: #D4D4D4;
+}
+.tree {
+    font-family: 'Courier New', monospace;
+    font-size: 5px;
+    line-height: 1.2;
+    color: white;
+    white-space: pre;
+    text-align: center;
+}
+@keyframes glow {
+    0%, 100% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+.red {
+        color: #ff0000;
+        text-shadow: 0 0 10px #ff0000;
+        animation: glow 1.5s ease-in-out infinite;
+    }
+
+.green {
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00;
+    animation: glow 1.5s ease-in-out infinite;
+}   
