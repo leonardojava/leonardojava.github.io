@@ -56,10 +56,14 @@
     
 </body>
 <script>
+    let play = false;
     function playMusic(){
+        if(!play){
         var music = new Audio('/resources/banger.mp3');
         music.loop = true;
         music.play();
+        play = true;
+        }
     }
 </script>
 </html>

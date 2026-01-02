@@ -76,6 +76,14 @@ a{
     white-space: pre;
     text-align: center;
 }
+.hardware{
+    font-family: 'Courier New', monospace;
+    font-size: 20px;
+    line-height: 1.2;
+    color: skyblue;
+    white-space: pre;
+    text-align: center;
+}
 @keyframes glow {
     0%, 100% {
         opacity: 0.4;
@@ -83,6 +91,9 @@ a{
     50% {
         opacity: 1;
     }
+}
+.haha{
+    animation: glow 0.1s ease-in-out infinite;
 }
 .red {
         color: #ff0000;
